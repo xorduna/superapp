@@ -11,8 +11,22 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             font-family: Arial, sans-serif;
+            animation: strobe 0.1s linear infinite;
+        }
+
+        @keyframes strobe {
+            0%   { background: #ff0000; }
+            10%  { background: #ff9900; }
+            20%  { background: #ffff00; }
+            30%  { background: #00ff00; }
+            40%  { background: #00ffff; }
+            50%  { background: #0000ff; }
+            60%  { background: #ff00ff; }
+            70%  { background: #ffffff; }
+            80%  { background: #000000; }
+            90%  { background: #ff0000; }
+            100% { background: #00ff00; }
         }
 
         .container {
